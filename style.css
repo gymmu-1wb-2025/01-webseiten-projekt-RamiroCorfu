@@ -4,7 +4,47 @@ body {
   grid-template-columns: 20% 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
-    "header header"
+    "header nav"
     "main main"
     "footer footer";
+}
+
+header,
+nav,
+main,
+footer {
+  border: 1px solid black;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+nav {
+  grid-area: nav;
+}
+footer {
+  grid-area: footer;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: normal;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  height: 100%;
+}
+.flex-wrapper > div {
+  flex-grow: 2;
+  flex-shrink: 4;
+  flex-basis: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
