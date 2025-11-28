@@ -7,32 +7,57 @@
     <title>Eigene Webseite</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
   </head>
 
   <body>
     <header>
-      <h1>Webseite von ...</h1>
+      <h1>Webseite über Ramiro Corfu</h1>
     </header>
-
+    <nav>
+      <div class="flex-wrapper">
+        <div>
+          <a href="#über mich">über mich</a>
+        </div>
+        <div>
+          <a href="#Hobbys">Hobbys</a>
+        </div>
+        <div>
+          <a href="#Familie">Familie</a>
+        </div>
+        <div>
+          <a href="#Werdegang">Werdegang</a>
+        </div>
+      </div>
+    </nav>
+    <button onklick="createNewElement()">Neues Element</button>
     <main>
-      <section>
-        <h2>Dies ist ein erster Abschnitt</h2>
-        Abschnitte haben immer einen Titel und dann den Text.
-      </section>
-
-      <section>
-        <h2>Das p-Tag</h2>
-        <p>Der Text sollte immer in ein p gepackt werden.</p>
-        <p>Mit dem p ist es auch möglich einen Zeilenumbruch zu haben.</p>
-      </section>
-
-      <section>
-        <h2>Unterseiten verlinken</h2>
+      <section id="über mich">
+        <h2>über mich</h2>
         <p>
-          Wir können auch weitere Webseiten verknüpfen, dafür müssen wir nur
-          einen Link angeben, wie zum Beispiel zu den
-          <a href="./unterseiten/hobbies.html">Hobbies</a>.
+          Mein Name ist Ramiro Corfu. Ich bin 16 Jahre alt und besuche das
+          Gymnasiums.
         </p>
+      </section>
+
+      <section id="Hobbys">
+        <h2>Hobbys</h2>
+        <ol>
+          <li>
+            <a href="./unterseiten/hobbies.html">Fitnessstudio</a>
+          </li>
+          <li>Rennen</li>
+          <li>Fagott</li>
+        </ol>
+      </section>
+
+      <section id="Familie">
+        <h2>Familie</h2>
+        <p></p>
+      </section>
+      <section id="Werdegang">
+        <h2>Werdegang</h2>
+        <p>Schule</p>
       </section>
     </main>
 
