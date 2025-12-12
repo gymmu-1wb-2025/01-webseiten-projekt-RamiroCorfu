@@ -89,3 +89,20 @@ svg:hover * {
   fill: red;
   stroke: red;
 }
+
+header {
+  font-family: Helvetica, sans-serif;
+}
+main {
+  font-family: Helvetica, sans-serif;
+}
+footer {
+  font-family: Helvetica, sans-serif;
+}
+/* Schriftgrösse */
+
+.ohne-punkte {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
