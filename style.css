@@ -51,7 +51,7 @@ section:nth-child(even) {
 .flex-wrapper {
   display: flex;
   flex-direction: row;
-  gap: 100px;
+  gap: 30px;
   align-items: normal;
   justify-content: flex-start;
   flex-wrap: nowrap;
@@ -83,4 +83,9 @@ section:nth-child(even) {
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+
+svg:hover * {
+  fill: red;
+  stroke: red;
 }
