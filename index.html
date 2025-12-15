@@ -87,6 +87,18 @@
             />
           </svg>
         </a>
+        <a href="#Farben">
+          <svg width="70px" viewBox="0 0 500 500">
+            <circle
+              cx="250"
+              cy="250"
+              r="150"
+              stroke="black"
+              stroke-width="5"
+              fill="black"
+            />
+          </svg>
+        </a>
       </div>
     </nav>
 
@@ -118,6 +130,36 @@
         <h2>Werdegang</h2>
         <p>Schule</p>
       </section>
+      <selection id="Farben">
+        <h2>Farben anpassen</h2>
+        <p>Hier kannst du die Farben der Webseite anpassen:</p>
+        <ul class="color-list">
+          <li class="svg-lightBlue" onclick="changeColor('lightblue')">
+            <svg width="20px" viewBox="0 0 500 500">
+              <circle cx="250" cy="250" r="200"/>
+            </svg>
+            <span>Hellblau</span>
+          </li>
+          <li class="svg-blue" onclick="changeColor('blue')">
+            <svg width="20px" viewBox="0 0 500 500">
+              <circle cx="250" cy="250" r="200"/>
+            </svg>
+            <span>Blau</span>
+          </li>
+          <li class="svg-white" onclick="changeColor('white')">
+            <svg width="20px" viewBox="0 0 500 500">
+              <circle cx="250" cy="250" r="200"/>
+            </svg>
+            <span>Weiss</span>
+          </li>
+          <li class="svg-normal" onclick="changeColor('black')">
+            <svg width="20px" viewBox="0 0 500 500">
+              <circle cx="250" cy="250" r="200"/>
+            </svg>
+            <span>Normal</span>
+          </li>
+        </ul>
+      </selection>
     </main>
 
     <footer>Meine Webseite</footer>
