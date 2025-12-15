@@ -1,7 +1,9 @@
 :root {
   --primary-color: #8a96aa;
 }
-
+:root {
+  --secondary-color: #8a96aa;
+}
 body {
   margin: 0;
   padding: 0;
@@ -135,6 +137,11 @@ footer {
 }
 .svg-white circle {
   fill: rgb(255, 255, 255);
+  stroke: rgb(0, 0, 0);
+  stroke-width: 8px;
+}
+.svg-normal circle {
+  fill: rgb(138, 150, 200);
   stroke: rgb(0, 0, 0);
   stroke-width: 8px;
 }
