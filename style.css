@@ -1,9 +1,11 @@
+/*Variablen für Farben*/
 :root {
   --primary-color: #8a96aa;
 }
 :root {
   --secondary-color: #8a96aa;
 }
+/*Grid Layout für die Seite*/
 body {
   margin: 0;
   padding: 0;
@@ -16,15 +18,11 @@ body {
     "main main"
     "footer footer";
 }
-
+/*Stil für die einzelnen Bereiche*/
 header,
 nav,
 main,
-footer {
-  border: 1px solid rgb(253, 253, 253);
-}
-
-header {
+footer header {
   grid-area: header;
 }
 
@@ -38,7 +36,7 @@ nav {
 footer {
   grid-area: footer;
 }
-
+/*Stil für die einzelnen Bereiche im Mainbereich*/
 section {
   margin: 0;
   min-height: 90vh;
@@ -49,7 +47,7 @@ section {
 section:nth-child(even) {
   background-color: hsl(from var(--primary-color) h s calc(l + 10));
 }
-
+/*Flexbox Layout für die Navigationsleiste*/
 .flex-wrapper {
   display: flex;
   flex-direction: row;
@@ -68,6 +66,7 @@ section:nth-child(even) {
   justify-content: center;
   height: 100%;
 }
+/*Zweites Flexbox Layout für die Unterwebseite*/
 .second-flex-wrapper {
   display: flex;
   flex-direction: row;
@@ -86,12 +85,12 @@ section:nth-child(even) {
   justify-content: center;
   height: 100%;
 }
-
+/*Effekt für SVG-Icons*/
 svg:hover * {
   fill: red;
   stroke: red;
 }
-
+/* Schriftart ändern*/
 header {
   font-family: Helvetica, sans-serif;
 }
@@ -101,14 +100,14 @@ main {
 footer {
   font-family: Helvetica, sans-serif;
 }
-/* Schriftgrösse */
 
+/*Listen ohne Punkten in der Unterwebseite*/
 .ohne-punkte {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
+/*Farb-Auswahl Liste ausrichten im Mainbereich*/
 .color-list {
   list-style: none;
   padding: 0;
@@ -125,6 +124,7 @@ footer {
   cursor: pointer;
 }
 
+/*Design der Farbkreise bei der Farbauswahl*/
 .svg-lightBlue circle {
   fill: rgb(141, 226, 247);
   stroke: rgb(0, 0, 0);
