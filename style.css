@@ -1,0 +1,183 @@
+/*Variablen für Farben*/
+:root {
+  --primary-color: #8a96aa;
+}
+:root {
+  --secondary-color: #8a96aa;
+}
+/*Grid Layout für die Seite*/
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header nav"
+    "main main"
+    "footer footer";
+}
+/*Stil für die einzelnen Bereiche*/
+header,
+nav,
+main,
+footer header {
+  grid-area: header;
+}
+/*Man kann horizontal scrollen im Mainbereich ohne das der Titel verschwindet*/
+main {
+  grid-area: main;
+  overflow-x: scroll;
+}
+nav {
+  grid-area: nav;
+}
+footer {
+  grid-area: footer;
+}
+/*Stil für die einzelnen Bereiche im Mainbereich*/
+section {
+  margin: 0;
+  min-height: 90vh;
+  background-color: var(--primary-color);
+  padding: 20px;
+}
+
+section:nth-child(even) {
+  background-color: hsl(from var(--primary-color) h s calc(l + 10));
+}
+/*Flexbox Layout für die Navigationsleiste*/
+.flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: normal;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  height: 100%;
+}
+.flex-wrapper > div {
+  flex-grow: 2;
+  flex-shrink: 4;
+  flex-basis: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+/*Zweites Flexbox Layout für die Unterwebseite*/
+.second-flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: normal;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  height: 100%;
+}
+.second-flex-wrapper > div {
+  flex-grow: 2;
+  flex-shrink: 4;
+  flex-basis: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+/*Übergangseffekt für SVG-Icons*/
+svg {
+  transition: transform 0.2s ease;
+}
+/*Effekt für SVG-Icons*/
+svg:hover * {
+  fill: red;
+  stroke: red;
+  transform: scale(1.1);
+}
+/* Schriftart ändern*/
+header {
+  font-family: Helvetica, sans-serif;
+}
+main {
+  font-family: Helvetica, sans-serif;
+}
+footer {
+  font-family: Helvetica, sans-serif;
+}
+
+/*Listen ohne Punkten in der Unterwebseite*/
+.ohne-punkte {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/*Farb-Auswahl Liste ausrichten im Mainbereich*/
+.color-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.color-list > li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  cursor: pointer;
+}
+
+/*Design der Farbkreise bei der Farbauswahl*/
+.svg-lightBlue circle {
+  fill: rgb(141, 226, 247);
+  stroke: rgb(0, 0, 0);
+  stroke-width: 8px;
+}
+.svg-blue circle {
+  fill: blue;
+  stroke: rgb(0, 0, 0);
+  stroke-width: 8px;
+}
+.svg-white circle {
+  fill: rgb(255, 255, 255);
+  stroke: rgb(0, 0, 0);
+  stroke-width: 8px;
+}
+.svg-normal circle {
+  fill: rgb(138, 150, 200);
+  stroke: rgb(0, 0, 0);
+  stroke-width: 8px;
+}
+/*grösse Header festlegen*/
+.picture-header {
+  size: 100px;
+  position: relative;
+}
+/*Hintergrundbild für den Header/ Nav Bereich einfügen*/
+.picture-header {
+  height: 100px;
+  background-image: url("https://images.unsplash.com/photo-1765476608471-c30c09564def?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*Titel über dem Hintergrundbild positionieren*/
+.picture-header h1 {
+  position: relative;
+  z-index: 1;
+}
+/*Grid Layout für die Unterwebseite Hobbies*/
+.hobbies-body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+}
