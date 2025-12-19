@@ -85,10 +85,15 @@ section:nth-child(even) {
   justify-content: center;
   height: 100%;
 }
+/*Übergangseffekt für SVG-Icons*/
+svg {
+  transition: transform 0.2s ease;
+}
 /*Effekt für SVG-Icons*/
 svg:hover * {
   fill: red;
   stroke: red;
+  transform: scale(1.1);
 }
 /* Schriftart ändern*/
 header {
